@@ -1,0 +1,32 @@
+emm_user_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: RMPUserBundle:Default:index }
+    
+emm_user_index:
+    path:       /user/index
+    defaults: { _controller: RMPUserBundle:User:index }
+
+emm_user_add:
+    path:       /user/add
+    defaults: { _controller: RMPUserBundle:User:add }
+    
+emm_user_create:
+    path:       /user/create
+    defaults: { _controller: RMPUserBundle:User:create }
+    methods: POST
+
+emm_user_edit:
+    path:     /user/edit/{id}
+    defaults: { _controller: RMPUserBundle:User:edit }
+
+emm_user_update:
+    path:     /user/update/{id}
+    defaults: { _controller: RMPUserBundle:User:update }
+    methods: [POST, PUT]
+
+emm_user_view:
+    path:     /user/view/{id}
+    defaults: { _controller: RMPUserBundle:User:view }
+emm_user_formulario:
+    path:     /user/formulario
+    defaults: { _controller: RMPUserBundle:User:formulario }
